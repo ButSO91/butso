@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	double a, b;
+	int k;
+met1:
+	cout << "Выбери конвертер:" << endl;
+	cout << "1) Градусы цельсия в фаренгейты" << endl;
+	cout << "2) Метры в футы" << endl;
+	cout << "3) Метры в ярды" << endl;
+	cout << "4) Километры в мили" << endl;
+	cout << "5) Киллограмы в фунты" << endl;
+	cout << "6) Литры в галлоны" << endl;
+	cin >> k;
+
+	switch (k)
+	{
+	case 1:
+		cout << "Введите гадусы цельсия: " << a << endl;
+		сin >> a;
+		b = a * 1.8 + 32;
+		cout << a << " градусов цельсия равно " << b << " градусов фаренгейта" << endl;
+		break;
+	case 2:
+		cout << "Введите количество метров: " << endl;
+		cin >> a;
+		b = a * 3.2808;
+		cout << a << " метров равно " << b << " футов" << endl;
+		break;
+	case 3:
+		cout << "Введите количество метров: " << endl;
+		cin >> a;
+		b = a * 1.0936;
+		cout << a << " метров равно " << b << " ярдов" << endl;
+		break;
+	case 4:
+		cout << "Введите количество километров " << endl;
+		cin >> a;
+		b = a * 0.62137;
+		cout << a << " километров равно " << b << " мили" << endl;
+		break;
+	case 5:
+		cout << "Введите количество килограм" << endl;
+		cin >> a;
+		b = a * 2.2046;
+		cout << a << " колограмм равно " << b << " фунта" << endl;
+		break;
+	case 6:
+		cout << "Введите количество литров " << endl;
+		cin >> a;
+		b = a * 0.26417;
+		cout << a << " лиров равно " << b << " галлон" << endl;
+		break;
+	}
+	system("pause");
+	goto met1;
+}
